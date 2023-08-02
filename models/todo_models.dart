@@ -2,11 +2,15 @@ class TodoModel {
   String? id;
   String? title;
   String? description;
+  bool? isDone;
+  String? date;
 
   TodoModel({
-    this.id,
-    this.title,
-    this.description,
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.isDone,
+    required this.date,
   });
 
   factory TodoModel.fromJson(Map<String, Object?> json) {
@@ -14,6 +18,8 @@ class TodoModel {
       id: json['id'] as String?,
       title: json['title'] as String?,
       description: json['description'] as String?,
+      isDone: json['isComplited'] as bool?,
+      date: json['date'] as String?,
     );
   }
 

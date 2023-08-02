@@ -23,5 +23,5 @@ void main() async {
           .toList();
 
   print(users[0].name);
-  print(todos[0].title);
+  print(todos[0].isDone);
 }
