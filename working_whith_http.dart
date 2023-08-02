@@ -6,7 +6,7 @@ import 'models/todo_models.dart';
 import 'models/user_model.dart';
 
 void main() async {
-  String baseUrl = 'https://64c9fb24b2980cec85c2ab56.mockapi.io/';
+  String baseUrl = 'https://64c9fb24b2980cec85c2ab56.mockapi.io';
   Uri uriTodo = Uri.parse('$baseUrl/todos');
   Uri uriUsers = Uri.parse('$baseUrl/users');
 
